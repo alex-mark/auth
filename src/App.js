@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { View } from 'react-native';
+import { Header } from './components/common';
+import LoginForm from './components/LoginForm';
 
 class App extends Component {
   render() {
     return (
-      <Text>hsdfjkg</Text>
+      <View>
+        <Header headerText='Authentication' />
+        <LoginForm />
+      </View>
     );
-  };
+  }
 }
 
 export default App;
